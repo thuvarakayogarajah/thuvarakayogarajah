@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="96" viewBox="0 0 1280 96"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6A11CB"/><stop offset="1" stop-color="#2575FC"/></linearGradient><style>.sans{font-family:'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif}.mono{font-family:'SF Mono', 'Cascadia Code', Consolas, 'Liberation Mono', monospace}</style></defs><text x="4" y="62" class="mono" font-size="18" fill="#2575FC">02</text>
+<text x="52" y="64" class="sans" font-size="34" font-weight="700" fill="#16161D">Featured projects</text>
+<rect x="4" y="84" width="1272" height="1" fill="#E7E5EE"/><rect x="4" y="83" width="120" height="3" rx="1.5" fill="url(#g)"/></svg>

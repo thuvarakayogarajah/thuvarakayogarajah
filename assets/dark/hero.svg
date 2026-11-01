@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#A78BFA"/><stop offset="1" stop-color="#60A5FA"/></linearGradient><style>.sans{font-family:'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif}.mono{font-family:'SF Mono', 'Cascadia Code', Consolas, 'Liberation Mono', monospace}</style></defs>
+<style>
+@keyframes f1{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,25px)}}
+@keyframes f2{0%,100%{transform:translate(0,0)}50%{transform:translate(-35px,-20px)}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes up{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.o1{animation:f1 9s ease-in-out infinite}.o2{animation:f2 11s ease-in-out infinite}
+.cur{animation:blink 1.1s step-end infinite}
+.u1{animation:up .8s ease-out both}.u2{animation:up .8s .15s ease-out both}.u3{animation:up .8s .3s ease-out both}
+</style>
+<clipPath id="clip"><rect width="1280" height="440" rx="28"/></clipPath>
+<g clip-path="url(#clip)">
+  <rect width="1280" height="440" fill="#0D1117"/>
+  <circle class="o1" cx="1120" cy="60" r="220" fill="#60A5FA" opacity=".16"/>
+  <circle class="o2" cx="640" cy="440" r="200" fill="#A78BFA" opacity=".13"/>
+  <g opacity=".5" stroke="#30363D"><line x1="0" y1="0" x2="0" y2="440"/><line x1="64" y1="0" x2="64" y2="440"/><line x1="128" y1="0" x2="128" y2="440"/><line x1="192" y1="0" x2="192" y2="440"/><line x1="256" y1="0" x2="256" y2="440"/><line x1="320" y1="0" x2="320" y2="440"/><line x1="384" y1="0" x2="384" y2="440"/><line x1="448" y1="0" x2="448" y2="440"/><line x1="512" y1="0" x2="512" y2="440"/><line x1="576" y1="0" x2="576" y2="440"/><line x1="640" y1="0" x2="640" y2="440"/><line x1="704" y1="0" x2="704" y2="440"/><line x1="768" y1="0" x2="768" y2="440"/><line x1="832" y1="0" x2="832" y2="440"/><line x1="896" y1="0" x2="896" y2="440"/><line x1="960" y1="0" x2="960" y2="440"/><line x1="1024" y1="0" x2="1024" y2="440"/><line x1="1088" y1="0" x2="1088" y2="440"/><line x1="1152" y1="0" x2="1152" y2="440"/><line x1="1216" y1="0" x2="1216" y2="440"/></g>
+</g>
+<rect x=".5" y=".5" width="1279" height="439" rx="28" fill="none" stroke="#30363D"/>
+<g class="u1"><text x="72" y="112" class="mono" font-size="18" fill="#60A5FA">// hello, world</text></g>
+<g class="u2"><text x="68" y="190" class="sans" font-size="60" font-weight="700" fill="#E6EDF3">Hi, I'm <tspan fill="url(#g)">Thuvaraka</tspan></text></g>
+<g class="u3">
+  <text x="72" y="252" class="sans" font-size="23" fill="#E6EDF3">Junior Software Developer @ Hamilton Medical</text>
+  <text x="72" y="288" class="sans" font-size="21" fill="#8B949E">BSc Computational &amp; Data Science @ FH Graubünden</text>
+  <rect x="72" y="326" width="256" height="40" rx="20" fill="#1F2630" stroke="#30363D"/>
+  <circle cx="96" cy="346" r="6" fill="url(#g)"/>
+  <text x="112" y="352" class="sans" font-size="16" fill="#E6EDF3">Sargans, Switzerland</text>
+</g>
+<rect x="760" y="96" width="452" height="290" rx="18" fill="#161B22" stroke="#30363D"/>
+<circle cx="788" cy="124" r="6" fill="#FF5F57"/><circle cx="808" cy="124" r="6" fill="#FEBC2E"/><circle cx="828" cy="124" r="6" fill="#28C840"/>
+<text x="1184" y="129" text-anchor="end" class="mono" font-size="13" fill="#8B949E">Thuki.java</text>
+<line x1="760" y1="146" x2="1212" y2="146" stroke="#30363D"/>
+<text x="790" y="180" class="mono" font-size="17" xml:space="preserve"><tspan fill="#FDBA74">@RestController</tspan></text><text x="790" y="210" class="mono" font-size="17" xml:space="preserve"><tspan fill="#F472B6">public class </tspan><tspan fill="#E6EDF3">Thuki</tspan><tspan fill="#8B949E"> {</tspan></text><text x="790" y="240" class="mono" font-size="17" xml:space="preserve"><tspan fill="#F472B6">  String </tspan><tspan fill="#E6EDF3">role  </tspan><tspan fill="#8B949E">= </tspan><tspan fill="#86EFAC">&quot;Backend Dev&quot;</tspan><tspan fill="#8B949E">;</tspan></text><text x="790" y="270" class="mono" font-size="17" xml:space="preserve"><tspan fill="#F472B6">  String </tspan><tspan fill="#E6EDF3">study </tspan><tspan fill="#8B949E">= </tspan><tspan fill="#86EFAC">&quot;Data Science&quot;</tspan><tspan fill="#8B949E">;</tspan></text><text x="790" y="300" class="mono" font-size="17" xml:space="preserve"><tspan fill="#F472B6">  String </tspan><tspan fill="#E6EDF3">base  </tspan><tspan fill="#8B949E">= </tspan><tspan fill="#86EFAC">&quot;Sargans, CH&quot;</tspan><tspan fill="#8B949E">;</tspan></text><text x="790" y="330" class="mono" font-size="17" xml:space="preserve"><tspan fill="#F472B6">  int </tspan><tspan fill="#E6EDF3">languages </tspan><tspan fill="#8B949E">= </tspan><tspan fill="#FDBA74">4</tspan><tspan fill="#8B949E">;</tspan></text><text x="790" y="360" class="mono" font-size="17" xml:space="preserve"><tspan fill="#8B949E">}</tspan></text>
+<rect class="cur" x="806" y="362" width="10" height="20" fill="#60A5FA"/>
+</svg>
