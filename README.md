@@ -38,7 +38,7 @@
 
 <!-- Replace the albums with your own favourites: Artist:Album, comma-separated, max 7, spaces as %20 -->
 <p align="center">
-  <img src="https://record-rotate.arkk200.workers.dev/?width=900&title=on&albums=Daft%20Punk:Random%20Access%20Memories,The%20Weeknd:After%20Hours,Taylor%20Swift:1989" width="100%" alt="Albums on repeat" />
+  <img src="https://record-rotate.arkk200.workers.dev/?width=900&title=on&albums=The%20Weeknd:Starboy,Sade:Love%20Deluxe,Michael%20Jackson:Thriller,Metro%20Boomin:Heroes%20%26%20Villains,Drake:Dark%20Lane%20Demo%20Tapes,J.%20Cole:2014%20Forest%20Hills%20Drive,Kendrick%20Lamar:DAMN." width="100%" alt="Albums on repeat" />
 </p>
 <br>
 
