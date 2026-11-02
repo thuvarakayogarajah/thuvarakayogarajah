@@ -13,7 +13,7 @@ NAME = "Thuvaraka"
 NICK = "Thuki"
 ROLE = "Junior Software Developer @ Hamilton Medical"
 STUDY = "BSc Computational & Data Science @ FH Graubünden"
-PLACE = "Sargans, Switzerland"
+PLACE = "Switzerland"
 
 NOW = "Now: writing my bachelor thesis, sharpening algorithms and learning more DevOps."
 
@@ -26,7 +26,7 @@ ABOUT = [
 PROJECTS = [
     ("Hackathon 2026", "Hitsch Fan Quest", "Fan-experience prototype for the Spengler Cup, built with Team 1 at the Thinksport Datahack Challenge."),
     ("Bachelor thesis", "Thesis project", "Data science thesis together with an industry partner. Details coming soon."),
-    ("Next up", "Coming soon", " Building something amazing. Edit tools/build.py."),
+    ("Next up", "Coming soon", " Building something amazing."),
 ]
 
 STACK = {

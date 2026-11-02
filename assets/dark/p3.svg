@@ -2,4 +2,4 @@
 <rect x="32" y="36" width="91" height="30" rx="15" fill="#1F2630"/>
 <text x="46" y="56" class="mono" font-size="14" fill="#60A5FA">Next up</text>
 <text x="32" y="128" class="sans" font-size="30" font-weight="700" fill="#E6EDF3">Coming soon</text>
-<rect x="32" y="146" width="44" height="3" rx="1.5" fill="url(#g)"/><text x="32" y="176" class="sans" font-size="18" fill="#8B949E">Building something amazing. Edit</text><text x="32" y="204" class="sans" font-size="18" fill="#8B949E">tools/build.py.</text></svg>
+<rect x="32" y="146" width="44" height="3" rx="1.5" fill="url(#g)"/><text x="32" y="176" class="sans" font-size="18" fill="#8B949E">Building something amazing.</text></svg>

@@ -21,9 +21,9 @@
 <g class="u3">
   <text x="72" y="252" class="sans" font-size="23" fill="#E6EDF3">Junior Software Developer @ Hamilton Medical</text>
   <text x="72" y="288" class="sans" font-size="21" fill="#8B949E">BSc Computational &amp; Data Science @ FH Graubünden</text>
-  <rect x="72" y="326" width="256" height="40" rx="20" fill="#1F2630" stroke="#30363D"/>
+  <rect x="72" y="326" width="166" height="40" rx="20" fill="#1F2630" stroke="#30363D"/>
   <circle cx="96" cy="346" r="6" fill="url(#g)"/>
-  <text x="112" y="352" class="sans" font-size="16" fill="#E6EDF3">Sargans, Switzerland</text>
+  <text x="112" y="352" class="sans" font-size="16" fill="#E6EDF3">Switzerland</text>
 </g>
 <rect x="760" y="96" width="452" height="290" rx="18" fill="#161B22" stroke="#30363D"/>
 <circle cx="788" cy="124" r="6" fill="#FF5F57"/><circle cx="808" cy="124" r="6" fill="#FEBC2E"/><circle cx="828" cy="124" r="6" fill="#28C840"/>
