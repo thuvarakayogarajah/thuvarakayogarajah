@@ -26,7 +26,7 @@ ABOUT = [
 PROJECTS = [
     ("Hackathon 2026", "Hitsch Fan Quest", "Fan-experience prototype for the Spengler Cup, built with Team 1 at the Thinksport Datahack Challenge."),
     ("Bachelor thesis", "Thesis project", "Data science thesis together with an industry partner. Details coming soon."),
-    ("Next up", "Your next project", "Replace this card with something you are proud of. Edit tools/build.py."),
+    ("Next up", "Coming soon", " Building something amazing. Edit tools/build.py."),
 ]
 
 STACK = {
@@ -97,7 +97,7 @@ def hero(c):
         [("public class ", c["k"]), (NICK, c["ink"]), (" {", c["muted"])],
         [("  String ", c["k"]), ("role  ", c["ink"]), ("= ", c["muted"]), ('"Backend Dev"', c["s"]), (";", c["muted"])],
         [("  String ", c["k"]), ("study ", c["ink"]), ("= ", c["muted"]), ('"Data Science"', c["s"]), (";", c["muted"])],
-        [("  String ", c["k"]), ("base  ", c["ink"]), ("= ", c["muted"]), ('" CH"', c["s"]), (";", c["muted"])],
+        [("  String ", c["k"]), ("base  ", c["ink"]), ("= ", c["muted"]), ('" Switzerland"', c["s"]), (";", c["muted"])],
         [("  int ", c["k"]), ("languages ", c["ink"]), ("= ", c["muted"]), ("4", c["t"]), (";", c["muted"])],
         [("}", c["muted"])],
     ]
