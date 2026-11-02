@@ -29,8 +29,27 @@ PROJECTS = [
     ("Next up", "Your next project", "Replace this card with something you are proud of. Edit tools/build.py."),
 ]
 
-STACK = ["Java", "Spring Boot", "MongoDB", "REST APIs", "Python", "Pandas", "NumPy",
-         "Jupyter", "Docker", "Git", "IntelliJ IDEA", "Notion"]
+STACK = {
+    "Backend": [("Java", "Jv", "#E76F00"), ("Spring Boot", "Sb", "#6DB33F"),
+                ("REST APIs", "{}", "#0E7490"), ("Maven", "Mv", "#C71A36"),
+                ("JUnit", "Ju", "#25A162"), ("Gradle", "Gr", "#209BC4")],
+    "Databases": [("MongoDB", "Mg", "#47A248"), ("PostgreSQL", "Pg", "#336791"),
+                  ("MySQL", "My", "#00758F"), ("SQLite", "Sl", "#0F80CC"),
+                  ("SQL", "Sq", "#64748B"), ("Redis", "Rd", "#DC382D")],
+    "Data Science": [("Python", "Py", "#3776AB"), ("Pandas", "Pd", "#6B46C1"),
+                     ("NumPy", "Np", "#4DABCF"), ("Matplotlib", "Mp", "#11557C"),
+                     ("Seaborn", "Sn", "#4C72B0"), ("Jupyter", "Jp", "#F37626")],
+    "Machine Learning": [("scikit-learn", "Sk", "#F7931E"), ("PyTorch", "Pt", "#EE4C2C"),
+                         ("TensorFlow", "Tf", "#FF8F00"), ("Keras", "Ks", "#D00000"),
+                         ("Hugging Face", "HF", "#E0A100"), ("R", "R", "#276DC3")],
+    "DevOps": [("Docker", "Dk", "#2496ED"), ("Kubernetes", "K8", "#326CE5"),
+               ("GitHub Actions", "GA", "#2088FF"), ("Linux", "Lx", "#3F3F46"),
+               ("Bash", "Sh", "#4EAA25"), ("Azure", "Az", "#0078D4")],
+    "Tools": [("Git", "Gt", "#F05032"), ("GitHub", "Gh", "#3F3F46"),
+              ("IntelliJ IDEA", "IJ", "#FE315D"), ("VS Code", "VS", "#007ACC"),
+              ("Postman", "Pm", "#FF6C37"), ("Notion", "N", "#52525B"),
+              ("Jira", "Ji", "#0052CC")],
+}
 
 LINKS = ["LinkedIn", "Email", "GitHub"]
 
@@ -78,7 +97,7 @@ def hero(c):
         [("public class ", c["k"]), (NICK, c["ink"]), (" {", c["muted"])],
         [("  String ", c["k"]), ("role  ", c["ink"]), ("= ", c["muted"]), ('"Backend Dev"', c["s"]), (";", c["muted"])],
         [("  String ", c["k"]), ("study ", c["ink"]), ("= ", c["muted"]), ('"Data Science"', c["s"]), (";", c["muted"])],
-        [("  String ", c["k"]), ("base  ", c["ink"]), ("= ", c["muted"]), ('"Sargans, CH"', c["s"]), (";", c["muted"])],
+        [("  String ", c["k"]), ("base  ", c["ink"]), ("= ", c["muted"]), ('" CH"', c["s"]), (";", c["muted"])],
         [("  int ", c["k"]), ("languages ", c["ink"]), ("= ", c["muted"]), ("4", c["t"]), (";", c["muted"])],
         [("}", c["muted"])],
     ]
@@ -149,17 +168,28 @@ def now(c):
     return svg(W, H, body, c)
 
 def stack(c):
-    W, pad, gap, x, y, rows = 1280, 0, 12, 0, 0, []
-    chips = ""
-    for s in STACK:
-        w = int(len(s) * 10.5 + 62)
-        if x + w > W:
-            x = 0; y += 60
-        chips += (f'<rect x="{x+.5}" y="{y+.5}" width="{w}" height="46" rx="23" fill="{c["card"]}" stroke="{c["line"]}"/>'
-                  f'<circle cx="{x+22}" cy="{y+23}" r="5" fill="url(#g)"/>'
-                  f'<text x="{x+36}" y="{y+29}" class="sans" font-size="17" fill="{c["ink"]}">{e(s)}</text>')
-        x += w + gap
-    return svg(W, y + 48, chips, c)
+    W, gap, cols = 1280, 22, 3
+    cw = (W - (cols - 1) * gap) // cols
+    groups = list(STACK.items())
+    out, y0 = "", 0
+    for r in range(0, len(groups), cols):
+        row = groups[r:r + cols]
+        H = 104 + max(len(t) for _, t in row) * 64 + 24
+        for i, (group, tools) in enumerate(row):
+            x, n = i * (cw + gap), r + i + 1
+            out += (f'<rect x="{x+.5}" y="{y0+.5}" width="{cw-1}" height="{H-1}" rx="22" fill="{c["card"]}" stroke="{c["line"]}"/>'
+                    f'<text x="{x+30}" y="{y0+52}" class="mono" font-size="14" fill="{c["a2"]}">{n:02d}</text>'
+                    f'<text x="{x+62}" y="{y0+53}" class="sans" font-size="22" font-weight="700" fill="{c["ink"]}">{e(group)}</text>'
+                    f'<rect x="{x+30}" y="{y0+70}" width="44" height="3" rx="1.5" fill="url(#g)"/>')
+            for j, (name, mono, col) in enumerate(tools):
+                y = y0 + 98 + j * 64
+                out += (f'<rect x="{x+30}" y="{y}" width="44" height="44" rx="12" fill="{col}"/>'
+                        f'<text x="{x+52}" y="{y+28}" text-anchor="middle" class="mono" font-size="16" font-weight="700" fill="#FFFFFF">{e(mono)}</text>'
+                        f'<text x="{x+92}" y="{y+29}" class="sans" font-size="19" fill="{c["ink"]}">{e(name)}</text>')
+                if j < len(tools) - 1:
+                    out += f'<rect x="{x+92}" y="{y+54}" width="{cw-122}" height="1" fill="{c["line"]}"/>'
+        y0 += H + gap
+    return svg(W, y0 - gap, out, c)
 
 def pill(label, c):
     W, H = len(label) * 10 + 48, 40
