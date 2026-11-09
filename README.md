@@ -34,20 +34,4 @@
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/stack.svg"><img src="assets/light/stack.svg" width="100%" alt="Java, Spring Boot, MongoDB, REST APIs, Python, Pandas, NumPy, Jupyter, Docker, Git, IntelliJ IDEA, Notion"></picture>
 <br><br>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/s04.svg"><img src="assets/light/s04.svg" width="100%" alt="On repeat"></picture>
-
-<!-- Replace the albums with your own favourites: Artist:Album, comma-separated, max 7, spaces as %20 -->
-<p align="center">
-  <img src="https://record-rotate.arkk200.workers.dev/?width=900&title=on&albums=The%20Weeknd:Starboy,Sade:Love%20Deluxe,Michael%20Jackson:Thriller,Metro%20Boomin:Heroes%20%26%20Villains,Drake:Dark%20Lane%20Demo%20Tapes,J.%20Cole:2014%20Forest%20Hills%20Drive,Kendrick%20Lamar:DAMN." width="100%" alt="Albums on repeat" />
-</p>
-<br>
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/s05.svg"><img src="assets/light/s05.svg" width="100%" alt="Building in public"></picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/thuvarakayogarajah/thuvarakayogarajah/output/github-snake-dark.svg">
-  <img src="https://raw.githubusercontent.com/thuvarakayogarajah/thuvarakayogarajah/output/github-snake.svg" width="100%" alt="Contribution graph being eaten by a snake">
-</picture>
-<br><br>
-
 <a href="https://www.linkedin.com/in/YOUR-LINKEDIN"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/cta.svg"><img src="assets/light/cta.svg" width="100%" alt="Let's build something together."></picture></a>
